@@ -1,8 +1,72 @@
-// @import 'core/variables';
-// @import 'core/reset';
+
 // @import 'components/code';
 // @import 'components/links';
 // @import 'layout/page';
 // @import 'layout/header';
 // @import 'layout/footer';
 // @import 'pages/index';
+
+@import 'core/reset';
+@import 'core/variables';
+
+*{
+    font-family: $mainFont;
+}
+
+.header {
+    width: 100vw;
+    height: 15px;
+    position: fixed;
+
+    &__icon{
+        background-color: $colorNavyBlue;
+        padding: 10px;
+    }
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/cover.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    
+    &__title{
+        width: 12ch;
+        color: $colorWhite;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 42px;
+        text-align: center;
+        
+    }
+    &__subtitle{
+        color: $colorWhite;
+        font-family: $secondFont;
+        width: 300px;
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    &__button{
+        width: 40px;
+        height: 40px;
+        border-style: none;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        background-color: $colorWhite;
+        
+    }
+    &--img{
+        width: 16px;
+        height: 9px;
+    }
+}
