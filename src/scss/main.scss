@@ -18,7 +18,7 @@
     height: 15px;
     position: fixed;
 
-    &__icon{
+    &__link{
         background-color: $colorNavyBlue;
         padding: 10px;
     }
@@ -68,5 +68,64 @@
     &--img{
         width: 16px;
         height: 9px;
+    }
+}
+
+.tips{
+    background-color: $colorWhite;
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+
+    &__subtitle{
+        font-family: $secondFont;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: $colorLightBlue;
+        font-weight:normal;
+        width: 290px;
+        margin-bottom: 7px;
+    }
+    &__title{
+        font-size: 24px;
+        text-transform: capitalize;
+        width: 290px;
+        margin-bottom: 20px;
+    }
+    &__text{
+        font-family: $secondFont;
+        font-size: 18px;
+        color: #4a4a4a;
+        line-height: 1.67;
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    &__button{
+        background-color: $colorWhite;
+        cursor: pointer;
+        padding: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 76px;
+        border-radius: 25px;
+        font-size: 20px;
+        color: $colorButton;
+        font-family: $secondFont;
+        font-weight: bold;
+        border: solid 3px $colorButton;
+    }
+}
+
+.reasons{
+    width: 100vw;
+    background-color: $colorBackground;
+
+    &__title{
+        
     }
 }
