@@ -124,6 +124,8 @@
 .reasons{
     width: 100vw;
     background-color: $colorBackground;
+    display: grid;
+    height: 600px;
 
     &__title{
         font-size: 24px;
@@ -134,4 +136,34 @@
         font-size: 18px;
         text-align: center;
     }
+    &__button{
+        background-color: $colorButton;
+        cursor: pointer;
+        padding: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 180px;
+        border-radius: 25px;
+        font-size: 20px;
+        color: $colorWhite;
+        font-family: $secondFont;
+        font-weight: bold;
+        border: solid 3px $colorWhite;
+    }
+}
+
+.footer{
+    background-color: $colorBackgroundFooter;
+    color: $colorWhite;
+    font-family: $secondFont;
+
+    &__button{
+        width: 200px;
+        height: 200px;
+        border-style: none;
+        border-radius: 50%;
+        background-color: $colorWhite;
+    }
+
+
 }
