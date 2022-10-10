@@ -170,7 +170,7 @@
 
 //FOOTER//
 .footer{
-    height: 465px;
+    height: 460px;
     background-color: $colorBackgroundFooter;
     color: $colorWhite;
     display: flex;
@@ -192,9 +192,20 @@
         background-color: $colorWhite;
     }
 
+    &__columns{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__navs{
+        display: flex;
+        flex-direction: column;
+    }
+    
     &__menu{
         line-height: 30px;
         text-align: center;
+        margin-bottom: 20px;
     }
     &__link{
         text-decoration: none;
@@ -221,6 +232,122 @@
 
     &__heart {
         color: $colorButton;
+    }
+
+}
+
+@media all and (min-width: 768px){
+    //HERO//
+    .hero{
+        &__title{
+            font-size: 80px;
+        }
+        &__subtitle{
+            font-size: 25px;
+        }
+    }
+
+    //TIPS//
+    .tips{
+        &__title{
+            font-size: 27px;
+            width: 600px;
+        }
+        &__text{
+            font-size: 20px;
+            width: 690px;
+        }
+        &__button{
+            width: 92px;
+        }
+    }
+
+    //REASONS//
+    .reasons{
+        display: grid;
+        grid-template-rows: 70px 160px 70px;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 400px;
+
+        &__title{
+            grid-column: 1 / 4;
+            font-size: 27px;
+        }
+        &__subtitle{
+            font-size: 24px;
+
+        }
+        &__text{
+            font-size: 20px;
+            width: 215px;
+            margin-top: 10px;
+
+        }
+        &__button{
+            grid-column: 1 / 4;
+            width: 200px;
+        }
+    }
+
+    //FOOTER// 
+    .footer{
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        &__columns{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+        }
+
+        &__navs{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        &__menu{
+            text-align: left;
+            margin-right: 80px;
+        }
+        &__copy{
+            margin-right: 100px;
+            align-items: flex-start;
+        }
+    }
+}
+
+@media all and (min-width: 1280px){
+    //HERO//
+    .hero{
+        &__title{
+            font-size: 100px;
+        }
+        &__subtitle{
+            font-size: 25px;
+            width: 500px;
+        }
+    }
+
+    //TIPS//
+    .tips{
+        &__text{
+            width: 720px;
+        }
+        &__button{
+            width: 160px;
+        }
+    }
+
+    //REASONS//
+    .reasons{
+        &__text{
+            width: 400px;
+        }
     }
 
 }
