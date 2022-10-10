@@ -1,0 +1,10 @@
+.header {
+    width: 100vw;
+    height: 15px;
+    position: fixed;
+
+    &__icon{
+        background-color: $colorNavyBlue;
+        padding: 10px;
+    }
+}

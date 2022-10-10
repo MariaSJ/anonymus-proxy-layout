@@ -1,0 +1,65 @@
+.hero{
+    height: 100vh;
+    background-image: url(../images/cover.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    
+    &__title{
+        width: 12ch;
+        color: $colorWhite;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 42px;
+        text-align: center;
+        
+    }
+    &__subtitle{
+        color: $colorWhite;
+        font-family: $secondFont;
+        width: 300px;
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    &__button{
+        padding: 10px;
+        border-style: none;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        background-color: $colorWhite;   
+    }
+    &--img{
+        width: 16px;
+        height: 9px;
+    }
+
+//////////////////////////////////////////
+
+    @media all and (min-width: 768px){
+        
+        &__title{
+            font-size: 80px;
+        }
+        &__subtitle{
+            font-size: 25px;
+        }
+    }
+
+    @media all and (min-width: 1280px){
+        &__title{
+            font-size: 100px;
+        }
+        &__subtitle{
+            font-size: 25px;
+            width: 500px;
+        }
+    }
+}
