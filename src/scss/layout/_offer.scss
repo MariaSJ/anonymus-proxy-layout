@@ -1,0 +1,33 @@
+.offer{
+    background-color: $colorButton;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    &__title{
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+}
+
+///////////////////////////////////
+
+@media all and (max-width: 768px){
+    .offer{
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px){
+    .offer{
+       &__div{
+        display: flex;
+        flex-direction: row;
+
+        }
+    }
+}
+
