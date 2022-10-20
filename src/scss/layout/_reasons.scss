@@ -27,6 +27,8 @@
     }
     &__button{
         background-color: $colorButton;
+        text-decoration: none;
+        text-align: center;
         cursor: pointer;
         padding: 8px;
         padding-left: 20px;
